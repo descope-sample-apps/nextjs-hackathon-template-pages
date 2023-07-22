@@ -10,7 +10,7 @@ To build yourself, the instructions are below...
 
 Currently, upon running the application, the information you see in your Dashboard is dummy data sent from our Airtable API route.
 
-If you navigate to ```/app/api/airtable/route.ts``` you will notice a ```res``` variable commented out and a new ```res``` variable below it which contains the placeholder data. <br />
+If you navigate to ```/pages/api/airtable.ts``` you will notice a ```res``` variable commented out and a new ```res``` variable below it which contains the placeholder data. <br />
 
 Once your Airtable is all setup, all you have to do is uncomment the res variable that actually gets the Airtable data and remove the current res variable which contains the dummy data. 
 

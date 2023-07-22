@@ -6,13 +6,17 @@
 
 <br />
 
-## 🚀 The Next.js Hackathon Template comes with Next.js 13 and Authentication using NextAuth and Descope. 
+> **_NOTE:_**  THIS IS USING NEXT.JS 12. FOR THE LATEST NEXT.JS 13 SEE THE MOST UP-TO-DATE [REPO](https://github.com/descope/nextjs-hackathon-template/).
+
+<br />
+
+## 🚀 The Next.js Hackathon Template comes with Next.js 12 and Authentication using NextAuth and Descope. 
 
 ## 🪐 The Hackathon template comes with the following full-stack features:
 
 ✅ [Descope](https://descope.com) NextAuth authentication 🔐 <br/>
 ✅ Protected pages & API routes with NextAuth. <br/>
-✅ The latest Next.js app router, API routing protocols, and NextAuth integrations. <br/>
+✅ Next.js pages router, API routing protocols, and NextAuth integrations. <br/>
 ✅ A fully and easily customizable Home screen which features an About, Speakers, Sponsors, and FAQ section. <br/>
 ✅ A dedicated Team page to showcase all contributors.  <br/>
 ✅ A Dashboard page for Hackers to complete onboarding forms, acceptance status, and hackathon announcements. <br/>
@@ -55,7 +59,7 @@ $ openssl rand -base64 32
 Descope is expected to be published as a NextAuth provider in the following months. <br />
 In the mean time, we can implement a custom provider which is as easy to implement! 
 
-Out NextAuth options can be found in ```/app/_utils/options.ts```.  
+Out NextAuth options can be found in ```/pages/_utils/options.ts```.  
 
 In our ```authOptions``` we have our custom Descope provider we have attributes such as your ```clientID``` (Descope project id), ```clientSecret``` (Descope access key), and ```wellKnown``` set to Descope's OpenID Connect configuration which contains our authorization endpoints and authentication data.
 
@@ -88,29 +92,26 @@ export const authOptions: NextAuthOptions = {
 }
 ```
 
-Then in our ```/app/api/auth/[...nextauth]/route.ts``` we pass our authOptions and intialize NextAuth.
+Then in our ```/pages/api/auth/[...nextauth].ts``` we pass our authOptions and intialize NextAuth.
 ```
 import NextAuth from "next-auth/next";
-import { authOptions } from "../../../_utils/options";
+import { authOptions } from "../../_utils/options";
 
 
-const handler = NextAuth(authOptions)
-
-
-export { handler as GET, handler as POST }
+export default NextAuth(authOptions)
 ```
 
 That's it! 
 
 ## 👾 Template Data
  
-The template data can be found in the ```./app/_template_data``` 
+The template data can be found in the ```./pages/_template_data``` 
 
 <img width="250" src="./readme-assets/template_data.png" />
 
 All the template data can be customized and found in the following files. <br />
 
-To see our template data in action make your way to ```app/page.tsx```. <br />
+To see our template data in action make your way to ```pages/index.tsx```. <br />
 In the ```page.tsx``` we import the different template data and the components from our ```_components``` folder. We pass in 
 our template data into these components as props that then render the data! 
 
