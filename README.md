@@ -7,7 +7,7 @@
 <br />
 
 > **_NOTE:_**  THIS IS USING NEXT.JS 12. FOR THE LATEST NEXT.JS 13 SEE THE MOST UP-TO-DATE [REPO](https://github.com/descope/nextjs-hackathon-template/).
-
+<br />
 
 ## 🚀 The Next.js Hackathon Template comes with Next.js 12 and Authentication using NextAuth and Descope. 
 
