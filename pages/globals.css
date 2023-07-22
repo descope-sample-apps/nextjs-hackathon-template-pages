@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,4 +33,5 @@ html, body {
                     linear-gradient(to right, rgb(190, 190, 190) 20%, rgb(243, 243, 243) 20%);
   background-size: 10px 10px, 10px 10px;
   scroll-behavior: smooth;
+  font-family: 'Silkscreen', cursive;
 }

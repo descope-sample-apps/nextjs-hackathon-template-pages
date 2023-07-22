@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { SocialType } from "../_template_data/Social"
 
 
@@ -6,14 +5,12 @@ export default function Bottom({ Logo, SocialList }: { Logo: string, SocialList:
     return (
         <div className='row justify-between px-4 py-4 bottom-0 w-full bg-[#1d242b]'>
             <div>
-                <Image
+                <img
                     src={Logo}
                     alt="bottom navbar logo"
                     width={200}
                     height={160}
                     className="w-12 h-12 m-6"
-                    placeholder="blur"
-                    blurDataURL={Logo}
                 />
             </div>
             <div className='row items-start h-full py-6 max-md:col text-white'>

@@ -33,7 +33,6 @@ export default function Dashboard({ airtableRecord }: { airtableRecord: any }) {
 
 
 export async function getServerSideProps(context: any) {
-    console.log("Context: ", context)
     const session = await getServerSession(context.req, context.res, authOptions)
     const headers = context.req.headers
 
@@ -52,10 +51,9 @@ export async function getServerSideProps(context: any) {
     const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`, {
         headers: headers
     })
-
-    console.log(res)
+    
     const data = await res.json()
-    const airtableRecord = data.body;
+    const airtableRecord = data.body || null;
 
     return { props: { airtableRecord } }
 }

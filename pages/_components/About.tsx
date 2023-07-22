@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { AboutType } from "../_template_data/About"
 
 
@@ -7,14 +6,10 @@ export default function About({ data, AboutImage }: { data: AboutType, AboutImag
         <div id="about" className='page component'>
             <div className='row'>
                 <div className='col flex-1 max-md:flex-none items-center justify-center w-[90%]'>
-                    <Image
+                    <img
                         src={AboutImage}
                         alt="About image"
-                        width={200}
-                        height={160}
                         className="w-[40vw] max-md:w-full max-md:mb-10 border-gray-800 border-8"
-                        placeholder="blur"
-                        blurDataURL={AboutImage}
                     />
                 </div>
                 <div className='col flex-1 max-md:flex-none max-md:mt-6 items-center justify-center'>

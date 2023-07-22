@@ -12,6 +12,12 @@ import Bottom from './_components/Bottom'
 import { SocialList } from './_template_data/Social'
 
 import { SessionProvider } from "next-auth/react"
+import Head from 'next/head';
+
+
+<Head>
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+</Head>
 
 
 export default function App({ Component, pageProps,}: AppProps<{ session: Session }>) {
