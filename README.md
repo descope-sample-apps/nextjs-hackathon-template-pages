@@ -57,9 +57,9 @@ $ openssl rand -base64 32
 Descope is expected to be published as a NextAuth provider in the following months. <br />
 In the mean time, we can implement a custom provider which is as easy to implement! 
 
-Out NextAuth options can be found in ```/pages/_utils/options.ts```.  
+Out NextAuth options can be found in ```pages/_utils/options.ts```.  
 
-In our ```authOptions``` we have our custom Descope provider we have attributes such as your ```clientID``` (Descope project id), ```clientSecret``` (Descope access key), and ```wellKnown``` set to Descope's OpenID Connect configuration which contains our authorization endpoints and authentication data.
+In our ```authOptions``` we have our custom Descope provider we have attributes such as your ```clientId``` (Descope project id), ```clientSecret``` (Descope access key), and ```wellKnown``` set to Descope's OpenID Connect configuration which contains our authorization endpoints and authentication data.
 
 ```
 import { NextAuthOptions } from "next-auth"
