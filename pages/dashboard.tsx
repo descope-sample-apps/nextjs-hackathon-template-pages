@@ -39,7 +39,7 @@ export async function getServerSideProps(context: any) {
     if (!session) {
         return {
           redirect: {
-            destination: '/',
+            destination: '/api/auth/signin?callbackUrl=/dashboard',
             permanent: false,
           },
         }

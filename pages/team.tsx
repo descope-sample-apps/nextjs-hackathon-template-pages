@@ -12,11 +12,11 @@ export default function Team() {
                         <Image 
                             src={person.image}
                             alt="pfp"
-                            width={200}
-                            height={160}
+                            width={0}
+                            height={0}
+                            sizes="100vw"
+                            style={{ width: '100%', height: 'auto' }} 
                             className="w-full"
-                            placeholder="blur"
-                            blurDataURL={person.image}
                         />                    
                         <div className="w-full break-all">
                             <p className="my-4 text-2xl">{person.name} / <span className='text-[#207ceb]'>{person.role}</span></p>
