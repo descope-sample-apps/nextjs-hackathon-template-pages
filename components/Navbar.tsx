@@ -53,7 +53,7 @@ export default function Navbar({ Logo }: { Logo: string }) {
                             {session ? 
                                 <a href={"/dashboard"} className="text-[#e9e9e9] bg-[#262d3b] py-2 px-7 border-[#45546e] border-4">Dashboard</a>
                                 :
-                                <button onClick={() => signIn("descope", { callbackUrl: "/dashboard" })} className="text-[#e9e9e9] bg-[#262d3b] py-2 px-7 border-[#45546e] border-4">Apply</button>
+                                <button onClick={() => signIn("descope")} className="text-[#e9e9e9] bg-[#262d3b] py-2 px-7 border-[#45546e] border-4">Apply</button>
                             }
                         </li>
                     </ul>
