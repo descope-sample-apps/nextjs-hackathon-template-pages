@@ -29,7 +29,7 @@
 
 ## 🚀 Deploy 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fnextjs-hackathon-template-pages&env=NEXTAUTH_URL,AIRTABLE_FORM_EMBED,AIRTABLE_TABLE_NAME,AIRTABLE_BASE,AIRTABLE_PERSONAL_ACCESS_TOKEN,DESCOPE_ACCESS_KEY,DESCOPE_PROJECT_ID,NEXTAUTH_SECRET)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope%2Fnextjs-hackathon-template&env=NEXTAUTH_URL,AIRTABLE_FORM_EMBED,AIRTABLE_TABLE_NAME,AIRTABLE_BASE,AIRTABLE_PERSONAL_ACCESS_TOKEN,DESCOPE_ACCESS_KEY,DESCOPE_PROJECT_ID,NEXTAUTH_SECRET)
 
 ## ⚙️ Setup: Local Testing
 
