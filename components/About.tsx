@@ -10,12 +10,17 @@ export default function About({ data, AboutImage }: { data: AboutType, AboutImag
                     <Image
                         src={AboutImage}
                         alt="About image"
-                        width={200}
-                        height={160}
-                        className="w-[40vw] max-md:w-full max-md:mb-10 border-gray-800 border-8"
-                        placeholder="blur"
-                        blurDataURL={AboutImage}
+                        width={600}
+                        height={600}
+                        className="about_image"
                     />
+                    <style jsx>{`
+                        .about_image {
+                            width: "40vh";
+                            height: "auto";
+                            border: "10px solid gray",
+                        }
+                    `}</style>
                 </div>
                 <div className='col flex-1 max-md:flex-none max-md:mt-6 items-center justify-center'>
                     <div className="col w-[90%]">

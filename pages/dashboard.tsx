@@ -39,14 +39,13 @@ export async function getServerSideProps(context: any) {
     if (!session) {
         return {
           redirect: {
-            destination: '/api/auth/signin?callbackUrl=/dashboard',
+            destination: '/dashboard',
             permanent: false,
           },
         }
-    }
+      }
     
     const email = encodeURIComponent(session?.user?.email || "")
-    
 
     const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`, {
         headers: headers
