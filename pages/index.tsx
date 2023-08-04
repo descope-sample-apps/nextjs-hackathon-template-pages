@@ -1,18 +1,18 @@
-import Intro from './_components/Intro'
-import Facts from './_components/Facts'
-import About from './_components/About'
-import Speakers from './_components/Speakers'
-import FAQ from './_components/FAQ'
-import Sponsors from './_components/Sponsors'
-import Schedule from './_components/Schedule'
+import Intro from '../components/Intro'
+import Facts from '../components/Facts'
+import About from '../components/About'
+import Speakers from '../components/Speakers'
+import FAQ from '../components/FAQ'
+import Sponsors from '../components/Sponsors'
+import Schedule from '../components/Schedule'
 
-import { ScheduleList } from './_template_data/Schedule'
-import { SpeakerList } from './_template_data/Speakers'
-import { SponsorList } from './_template_data/Sponsor'
-import { FAQList } from './_template_data/FAQ'
-import { AboutParagraph } from './_template_data/About'
+import { ScheduleList } from '../template_data/Schedule'
+import { SpeakerList } from '../template_data/Speakers'
+import { SponsorList } from '../template_data/Sponsor'
+import { FAQList } from '../template_data/FAQ'
+import { AboutParagraph } from '../template_data/About'
 
-import AboutImage from "./_assets/about/umberto-deb2EnbWPr8-unsplash.jpg"
+import AboutImage from "../assets/about/umberto-deb2EnbWPr8-unsplash.jpg"
 
 
 export default function Home() {

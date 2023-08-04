@@ -1,4 +1,4 @@
-import { FAQType } from "../_template_data/FAQ"
+import { FAQType } from "../template_data/FAQ"
 
 
 export default function FAQ({ data }: { data: FAQType[] }) {

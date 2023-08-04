@@ -1,13 +1,13 @@
 import { getServerSession } from 'next-auth'
-import { authOptions } from '@/pages/_utils/options'
+import { authOptions } from '../utils/options'
 
-import Header from "./_dashboard_components/Header"
-import Status from "./_dashboard_components/Status"
-import Form from "./_dashboard_components/Form"
-import Application from "./_dashboard_components/Application"
-import Info from "./_dashboard_components/Info"
+import Header from "../components/dashboard_components/Header"
+import Status from "../components/dashboard_components/Status"
+import Form from "../components/dashboard_components/Form"
+import Application from "../components/dashboard_components/Application"
+import Info from "../components/dashboard_components/Info"
 
-import { AnnouncementsList } from "@/pages/_template_data/Announcements"
+import { AnnouncementsList } from "@/template_data/Announcements"
 
 
 export default function Dashboard({ airtableRecord }: { airtableRecord: any }) {

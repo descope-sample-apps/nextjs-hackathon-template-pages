@@ -1,4 +1,5 @@
-import { TeamList } from "./_template_data/Team"
+import Image from "next/image"
+import { TeamList } from "../template_data/Team"
 
 
 export default function Team() {
@@ -8,10 +9,14 @@ export default function Team() {
             <div className="flex flex-row w-full items-start justify-center h-full">
                 {TeamList.map((person, i) => (
                     <div key={i} className="w-1/4 max-md:w-[80%]">
-                        <img 
+                        <Image 
                             src={person.image}
                             alt="pfp"
+                            width={200}
+                            height={160}
                             className="w-full"
+                            placeholder="blur"
+                            blurDataURL={person.image}
                         />                    
                         <div className="w-full break-all">
                             <p className="my-4 text-2xl">{person.name} / <span className='text-[#207ceb]'>{person.role}</span></p>
