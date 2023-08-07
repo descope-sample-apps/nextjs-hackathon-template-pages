@@ -1,4 +1,4 @@
-import Pfp from '../_assets/team/pfp.png'
+import Pfp from '../assets/team/pfp.png'
 
 
 export type TeamType = {
