@@ -1,19 +1,19 @@
-import Logo from '../assets/sponsors/esther-jiao-ADv0GiMBlmI-unsplash.jpg'
+import Logo from '../_assets/sponsors/esther-jiao-ADv0GiMBlmI-unsplash.jpg'
 
 
 export type SponsorType = {
-    "img": string
+    img: string
 }
 
 
 export const SponsorList: SponsorType[] = [
     {
-        "img": Logo.src
+        img: Logo.src
     },
     {
-        "img": Logo.src
+        img: Logo.src
     },
     {
-        "img": Logo.src
+        img: Logo.src
     }
 ]
