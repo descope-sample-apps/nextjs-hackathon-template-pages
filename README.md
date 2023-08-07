@@ -1,46 +1,38 @@
 # Next.js Hackathon Template
 
-<img src="./readme-assets/authhacks.png" />
-
-### [Template Features](#-the-hackathon-template-comes-with-the-following-full-stack-features) 🪐 | [Tech Stack](#-made-with) ✨ | [Deploy](#-deploy) 🚀 | [Setup](#-setup-local-testing) ⚙️ | [Descope](#-descope) 🔑 | [Template Data](#-template-data) 👾 | [Airtable Setup](#-airtable-setup) 📦 | [Gallery](#-gallery) 👨‍🍳
+### [Template Features](#-the-hackathon-template-comes-with-the-following-full-stack-features) · [Tech Stack](#-made-with) · [Setup](#-setup-local-testing) · [Descope](#-descope) · [Template Data](#-template-data) · [Airtable Setup](#-airtable-setup) · [Deploy](#-deploy) · [Gallery](#-gallery) 
 
 <br />
 
-> **_NOTE:_**  THIS IS USING NEXT.JS 12. FOR THE LATEST NEXT.JS 13 SEE THE MOST UP-TO-DATE [REPO](https://github.com/descope/nextjs-hackathon-template/).
-
-## 🚀 The Next.js Hackathon Template comes with Next.js 12 and Authentication using NextAuth and Descope. 
-
 ## 🪐 The Hackathon template comes with the following full-stack features:
 
-✅ [Descope](https://descope.com) NextAuth authentication 🔐 <br/>
-✅ Protected pages & API routes with NextAuth. <br/>
-✅ Next.js pages router, API routing protocols, and NextAuth integrations. <br/>
-✅ A fully and easily customizable Home screen which features an About, Speakers, Sponsors, and FAQ section. <br/>
-✅ A dedicated Team page to showcase all contributors.  <br/>
-✅ A Dashboard page for Hackers to complete onboarding forms, acceptance status, and hackathon announcements. <br/>
-✅ Fully responsive UI (mobile, tablet, computer). <br/>
-✅ Airtable backend for hackers to signup and view hackathon details. <br/>
+- [Descope](https://descope.com) NextAuth authentication 🔐 <br/>
+- Protected pages & API routes with NextAuth. <br/>
+- The latest Next.js app router, server & client components. <br/>
+- Fully customizable Home screen which features an About, Speakers, Sponsors, and FAQ section. <br/>
+- A dedicated Team page to showcase all contributors.  <br/>
+- A Dashboard page for Hackers to complete onboarding forms, acceptance status, and hackathon announcements. <br/>
+- Airtable backend for hackers to signup and view hackathon details. <br/>
+- Fully responsive UI (mobile, tablet, computer). <br/>
 
 ## ✨ Made with... 
 
-- NextAuth (Auth.js) using Descope provider
-- Flowbite
-- Tailwind CSS
-
-## 🚀 Deploy 
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fnextjs-hackathon-template-pages&env=NEXTAUTH_URL,AIRTABLE_FORM_EMBED,AIRTABLE_TABLE_NAME,AIRTABLE_BASE,AIRTABLE_PERSONAL_ACCESS_TOKEN,DESCOPE_ACCESS_KEY,DESCOPE_PROJECT_ID,NEXTAUTH_SECRET)
+- [Descope](https://www.descope.com/)
+- [NextAuth](https://next-auth.js.org/)
+- [Flowbite](https://flowbite.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Airtable](https://www.airtable.com/) (Optional)
 
 ## ⚙️ Setup: Local Testing
 
 1. In the root directory of the project, copy the `.env.example` to `.env` by running `cp .env.example .env` and include the following:
 
 ```
-NEXTAUTH_SECRET="<YOUR_NEXTAUTH_SECRET>"
-NEXTAUTH_URL="<WHERE SERVER IS HOSTED (e.g. https://localhost:3000)>"
+NEXTAUTH_SECRET="YOUR_NEXTAUTH_SECRET"
+NEXTAUTH_URL="WHERE SERVER IS HOSTED (e.g. http://localhost:3000)"
 
-DESCOPE_PROJECT_ID="<YOUR_DESCOPE_PROJECT_ID>"
-DESCOPE_ACCESS_KEY="<YOUR_DESCOPE_ACCESS_KEY>"
+DESCOPE_PROJECT_ID="YOUR_DESCOPE_PROJECT_ID"
+DESCOPE_ACCESS_KEY="YOUR_DESCOPE_ACCESS_KEY"
 ```
 
 - `DESCOPE_PROJECT_ID` - can be found in your Descope's account under the [Project page](https://app.descope.com/settings/project)  
@@ -69,8 +61,7 @@ https://auth.descope.io/<YOUR_DESCOPE_PROJECT_ID>
 
 ## 🔑 Descope 
 
-Descope is expected to be published as a NextAuth provider in the following months. <br />
-In the mean time, we can implement a custom provider which is as easy to implement! 
+To use Descope, we can implement a custom provider. <br />
 
 Out NextAuth options can be found in ```/pages/_utils/options.ts```.  
 
@@ -114,13 +105,9 @@ import { authOptions } from "../../_utils/options";
 export default NextAuth(authOptions)
 ```
 
-That's it! 
-
 ## 👾 Template Data
  
 The template data can be found in the ```./pages/_template_data``` 
-
-<img width="250" src="./readme-assets/template_data.png" />
 
 All the template data can be customized and found in the following files. <br />
 
@@ -134,21 +121,6 @@ our template data into these components as props that then render the data!
 
 To learn more about creating a form and setting up Airtable as a database go to [Airtable.md](Airtable.md)! 
 
-## 👨‍🍳 Gallery
+## 🚀 Deploy 
 
-<img src="./readme-assets/authhacks_1.png" />
-<img src="./readme-assets/authhacks_2.png" />
-<img src="./readme-assets/authhacks_3.png" />
-<img src="./readme-assets/authhacks_4.png" />
-<img src="./readme-assets/authhacks_5.png" />
-<img src="./readme-assets/authhacks_6.png" />
-<img src="./readme-assets/team.png" />
-<img src="./readme-assets/accepted_1.png" />
-<img src="./readme-assets/accepted_2.png" />
-<img src="./readme-assets/application_pending.png" />
-<img src="./readme-assets/signup.png" />
-
-<br />
-<br />
-
-## Made with ☕ + 💙
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fnextjs-hackathon-template-pages&env=NEXTAUTH_URL,AIRTABLE_FORM_EMBED,AIRTABLE_TABLE_NAME,AIRTABLE_BASE,AIRTABLE_PERSONAL_ACCESS_TOKEN,DESCOPE_ACCESS_KEY,DESCOPE_PROJECT_ID,NEXTAUTH_SECRET)
