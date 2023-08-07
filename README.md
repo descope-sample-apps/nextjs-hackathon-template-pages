@@ -59,8 +59,7 @@ https://auth.descope.io/<YOUR_DESCOPE_PROJECT_ID>
 
 ## 🔑 Descope 
 
-Descope is expected to be published as a NextAuth provider in the following months. <br />
-In the mean time, we can implement a custom provider which is as easy to implement! 
+To use Descope, we can implement a custom provider. <br />
 
 Out NextAuth options can be found in ```/pages/_utils/options.ts```.  
 
@@ -139,8 +138,3 @@ To learn more about creating a form and setting up Airtable as a database go to 
 <img src="./readme-assets/accepted_2.png" />
 <img src="./readme-assets/application_pending.png" />
 <img src="./readme-assets/signup.png" />
-
-<br />
-<br />
-
-## Made with ☕ + 💙
