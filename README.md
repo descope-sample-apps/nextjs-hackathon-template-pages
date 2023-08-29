@@ -125,3 +125,11 @@ To learn more about creating a form and setting up Airtable as a database go to 
 ## 🚀 Deploy 
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdescope-sample-apps%2Fnextjs-hackathon-template-pages&env=NEXTAUTH_URL,AIRTABLE_FORM_EMBED,AIRTABLE_TABLE_NAME,AIRTABLE_BASE,AIRTABLE_PERSONAL_ACCESS_TOKEN,DESCOPE_ACCESS_KEY,DESCOPE_PROJECT_ID,NEXTAUTH_SECRET)
+
+## ⚠️ Issue Reporting
+
+For any issues or suggestions, feel free to open an issue in the GitHub repository.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
