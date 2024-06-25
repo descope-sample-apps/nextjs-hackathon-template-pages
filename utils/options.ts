@@ -7,7 +7,7 @@ export const authOptions: NextAuthOptions = {
       id: "descope",
       name: "Descope",
       type: "oauth",
-      wellKnown: process.env.DESCOPE_ISSUER_URL,
+      wellKnown: process.env.DESCOPE_DISCOVERY_URL,
       authorization: { params: { scope: "openid email profile" } },
       idToken: true,
       clientId: process.env.DESCOPE_PROJECT_ID, 
