@@ -47,12 +47,17 @@ export async function getServerSideProps(context: any) {
     
     const email = encodeURIComponent(session?.user?.email || "")
 
-    const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`, {
-        headers: headers
-    })
-    
-    const data = await res.json()
-    const airtableRecord = data.body || null;
+    try {
+        const res = await fetch(`${process.env.NEXTAUTH_URL}/api/airtable?email=${email}`, {
+            headers: headers
+        })
+        
+        const data = await res.json()
+        const airtableRecord = data.body || null;
 
-    return { props: { airtableRecord } }
+        return { props: { airtableRecord } }
+    } catch (error) { 
+        console.error(error)
+        return { props: { airtableRecord: null } }
+    }
 }
