@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@descope/nextjs-sdk": "0.0.22",
     "@types/node": "20.4.2",
     "@types/node-fetch": "^2.6.4",
     "@types/react": "18.2.14",
@@ -16,7 +17,7 @@
     "airtable": "^0.12.1",
     "encoding": "^0.1.13",
     "flowbite": "1.7.0",
-    "next": "^12.3.4",
+    "next": "^13.3.4",
     "next-auth": "4.22.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
