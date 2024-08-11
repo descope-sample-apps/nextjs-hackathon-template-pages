@@ -1,4 +1,4 @@
-import { NextAuthOptions } from "next-auth";
+import { NextAuthOptions } from "next-auth"
 
 
 export const authOptions: NextAuthOptions = {
@@ -22,23 +22,5 @@ export const authOptions: NextAuthOptions = {
         }
       },
     },
-  ],
-  callbacks: {
-    async jwt({ token, account }) {
-      if (account?.id_token) {
-        token.idToken = account.id_token;
-      }
-
-      if (account?.refresh_token) {
-        token.refreshToken = account.refresh_token;
-      }
-      return token;
-    },
-    async session({ session, token }) {
-
-      (session as any).idToken = token.idToken;
-      (session as any).refreshToken = token.refreshToken;
-      return session;
-    },  
-  },
+  ]
 }
